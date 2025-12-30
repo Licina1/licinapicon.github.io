@@ -1,6 +1,3 @@
-
-*(La estructura puede ampliarse con secciones o páginas adicionales según sea necesario.)*
-
 ## 🛠️ Tecnologías utilizadas
 
 - **HTML5**
