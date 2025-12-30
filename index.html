@@ -1,225 +1,153 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8" />
+    <title>Licina Picón – Perfil profesional</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- SEO básico -->
+    <meta name="description" content="Perfil profesional de Licina Picón. Trayectoria, proyectos y líneas de trabajo." />
+    <meta name="author" content="Licina Picón" />
+    <meta name="robots" content="index, follow" />
 
-  <title>Licina Picón | Security Incident Handler</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Licina Picón – Perfil profesional" />
+    <meta property="og:description" content="Trayectoria, proyectos y trabajo profesional de Licina Picón." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_AR" />
 
-  <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom styles (opcional) -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+    </style>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Licina Picón",
+      "url": "https://licina1.github.io/",
+      "description": "Perfil profesional y proyectos de Licina Picón",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Argentina"
+      }
+    }
+    </script>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-100">
 
-
-
-<header>
-
-  <h1>Licina Picón</h1>
-
-  <p>Security Incident Handler Specialist at Ualá</p>
-
-  <nav>
-
-    <a href="#about">Sobre mí</a>
-
-    <a href="#work">Áreas de trabajo</a>
-
-    <a href="#contact">Contacto</a>
-
-  </nav>
-
+<!-- HEADER -->
+<header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        <span class="font-semibold text-lg">Licina Picón</span>
+        <div class="space-x-6 text-sm hidden sm:block">
+            <a href="#about" class="hover:text-sky-400">Sobre mí</a>
+            <a href="#projects" class="hover:text-sky-400">Proyectos</a>
+            <a href="#experience" class="hover:text-sky-400">Trayectoria</a>
+            <a href="#contact" class="hover:text-sky-400">Contacto</a>
+        </div>
+    </nav>
 </header>
 
-
-
-<main>
-
-
-
-<section id="about">
-
-  <h2>Sobre mí</h2>
-
-  <p>
-
-    Me apasiona construir sistemas seguros y resilientes, y ayudar a las organizaciones
-
-    a fortalecer sus capacidades de detección y respuesta en un entorno de amenazas
-
-    en constante evolución.
-
-  </p>
-
-  <p>
-
-    Trabajo como <strong>Security Incident Handler Specialist en un Security Operations Center (SOC)</strong>,
-
-    donde combino experiencia técnica y visión estratégica para abordar incidentes de seguridad
-
-    desde múltiples perspectivas.
-
-  </p>
-
-  <p>
-
-    La curiosidad, la responsabilidad y el aprendizaje continuo guían mi trabajo diario.
-
-    Mi recorrido en el sector fintech me permitió comprender cómo se intersectan la tecnología,
-
-    la seguridad y la estrategia de negocio para construir confianza e impulsar la innovación.
-
-  </p>
-
-</section>
-
-
-
-<section id="work">
-
-  <h2>Áreas de trabajo en un SOC</h2>
-
-
-
-  <div class="card">
-
-    <h3>Security Operations & Incident Handling</h3>
-
-    <ul>
-
-      <li>Monitoreo y análisis de eventos de seguridad</li>
-
-      <li>Investigación, contención y escalamiento de incidentes</li>
-
-      <li>Coordinación con equipos técnicos y de negocio</li>
-
-      <li>Gestión de incidentes end-to-end</li>
-
-    </ul>
-
-  </div>
-
-
-
-  <div class="card">
-
-    <h3>Threat Detection & Analysis</h3>
-
-    <ul>
-
-      <li>Análisis de alertas y comportamiento anómalo</li>
-
-      <li>Identificación de TTPs y patrones de ataque</li>
-
-      <li>Evaluación de impacto y riesgo</li>
-
-    </ul>
-
-  </div>
-
-
-
-  <div class="card">
-
-    <h3>Reporting & Continuous Improvement</h3>
-
-    <ul>
-
-      <li>Elaboración de reportes de incidentes</li>
-
-      <li>Documentación de lecciones aprendidas</li>
-
-      <li>Mejora continua de procesos y detecciones</li>
-
-    </ul>
-
-  </div>
-
-</section>
-
-
-
-<section id="certifications">
-
-  <h2>Certificaciones</h2>
-
-
-
-  <ul class="cert-list">
-
-    <li>
-
-      <strong>Elastic Security for SIEM (On-Demand)</strong><br/>
-
-      Elastic — 2025
-
-    </li>
-
-    <li>
-
-      <strong>Diplomatura en Ciberseguridad</strong><br/>
-
-      Universidad de Palermo — 2023
-
-    </li>
-
-    <li>
-
-      <strong>CompTIA Pentest+ Learning Path</strong><br/>
-
-      TryHackMe — 2022
-
-    </li>
-
-    <li>
-
-      <strong>Splunk Enterprise Certified Admin</strong><br/>
-
-      Splunk — 2021
-
-    </li>
-
-  </ul>
-
-</section>
-
-
-
-<section id="contact">
-
-  <h2>Contacto</h2>
-
-  <p>
-
-    <a href="https://www.linkedin.com/in/licinapicon/" target="_blank">
-
-      LinkedIn
-
-    </a>
-
-  </p>
-
-</section>
-
-
+<!-- MAIN -->
+<main class="max-w-5xl mx-auto px-4 py-16 space-y-16">
+
+    <!-- HERO -->
+    <section class="text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Licina Picón</h1>
+        <p class="text-lg text-slate-300">Perfil profesional</p>
+
+        <div class="flex justify-center gap-6 mt-6 text-2xl">
+            <a href="https://www.linkedin.com/in/licinapicon/" target="_blank" class="hover:text-sky-400">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/licina1" target="_blank" class="hover:text-sky-400">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="glass rounded-xl p-6">
+        <h2 class="text-2xl font-semibold mb-4">Sobre mí</h2>
+        <p class="text-slate-300 leading-relaxed">
+            Soy Licina Picón. Este espacio reúne parte de mi trayectoria, mis proyectos
+            y líneas de trabajo. Me interesa construir pensamiento, procesos y herramientas
+            con sentido, cuidando tanto la forma como el contenido.
+        </p>
+    </section>
+
+    <!-- AREAS -->
+    <section class="glass rounded-xl p-6">
+        <h2 class="text-2xl font-semibold mb-4">Áreas de trabajo</h2>
+        <ul class="space-y-2 text-slate-300">
+            <li>• Análisis y producción de contenidos</li>
+            <li>• Investigación y escritura</li>
+            <li>• Desarrollo de proyectos interdisciplinarios</li>
+            <li>• Organización y curaduría de información</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="glass rounded-xl p-6">
+        <h2 class="text-2xl font-semibold mb-4">Proyectos</h2>
+
+        <div class="space-y-4">
+            <div class="p-4 bg-slate-900/60 rounded-lg">
+                <h3 class="font-semibold">Proyecto / Trabajo</h3>
+                <p class="text-sm text-slate-400">
+                    Breve descripción del proyecto, su contexto y enfoque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="glass rounded-xl p-6">
+        <h2 class="text-2xl font-semibold mb-4">Trayectoria</h2>
+        <p class="text-slate-300 text-sm">
+            Podés usar esta sección para describir recorridos, experiencias relevantes
+            o hitos profesionales sin necesidad de un CV rígido.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="glass rounded-xl p-6">
+        <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
+        <ul class="space-y-2 text-slate-300">
+            <li><i class="fas fa-map-marker-alt mr-2"></i> Argentina</li>
+            <li>
+                <i class="fas fa-envelope mr-2"></i>
+                <a href="mailto:licina1@gmail.com" class="hover:text-sky-400">
+                    licina1@gmail.com
+                </a>
+            </li>
+        </ul>
+    </section>
 
 </main>
 
-
-
-<footer>
-
-  <p>© 2025 Licina Picón</p>
-
+<!-- FOOTER -->
+<footer class="text-center text-slate-500 text-sm py-8">
+    © 2025 Licina Picón
 </footer>
 
-
-
 </body>
-
 </html>
+
