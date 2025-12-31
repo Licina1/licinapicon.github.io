@@ -6,6 +6,13 @@
 
     <title>Licina Picón – Perfil profesional</title>
 
+    <script>
+        tailwind.config = {
+        darkMode: 'class'
+          }
+    </script>
+
+    
     <!-- SEO básico -->
     <meta name="description" content="Perfil profesional de Licina Picón. Trayectoria, proyectos y líneas de trabajo." />
     <meta name="author" content="Licina Picón" />
@@ -63,6 +70,11 @@
             <a href="#experience">Trayectoria</a>
             <a href="#recursos">Recursos</a>
             <a href="#contact">Contacto</a>
+
+            <!-- toggle -->
+            <button id="theme-toggle" class="text-slate-400 hover:text-sky-400 transition text-lg">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 </header>
@@ -317,6 +329,34 @@
     © 2025 Licina Picón
 </footer>
 
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = toggle.querySelector('i');
+  const root = document.documentElement;
+
+  // estado inicial
+  if (localStorage.theme === 'light') {
+    root.classList.remove('dark');
+    icon.classList.replace('fa-moon', 'fa-sun');
+  } else {
+    root.classList.add('dark');
+    icon.classList.replace('fa-sun', 'fa-moon');
+  }
+
+  toggle.addEventListener('click', () => {
+    if (root.classList.contains('dark')) {
+      root.classList.remove('dark');
+      localStorage.theme = 'light';
+      icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      root.classList.add('dark');
+      localStorage.theme = 'dark';
+      icon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
+</script>
+
+    
 </body>
 </html>
 
