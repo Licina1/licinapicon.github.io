@@ -31,11 +31,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Custom styles (opcional) -->
-    <style>
-        <body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
-    </style>
-
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
@@ -67,10 +62,15 @@
             <a href="#contact">Contacto</a>
 
             <!-- toggle -->
-            <button onclick="toggleTheme()" class="text-xl">
-              <span class="dark:hidden">🌙</span>
-              <span class="hidden dark:inline">☀️</span>
+            <button
+              id="theme-toggle"
+              class="ml-4 text-xl hover:opacity-80 transition"
+              aria-label="Toggle dark mode"
+            >
+                <span class="dark:hidden">🌙</span>
+                <span class="hidden dark:inline">☀️</span>
             </button>
+
 
         </div>
     </nav>
@@ -236,74 +236,85 @@
     </p>
 </section>
 
-    <!-- RESOURCES -->
-    <section id="recursos"  class="glass rounded-xl p-6">
-    <h2 class="text-2xl font-semibold mb-5">Recursos útiles</h2>
+<!-- RESOURCES -->
+<section id="recursos" class="glass rounded-xl p-6">
+  <h2 class="text-2xl font-semibold mb-5">Recursos útiles</h2>
 
-    <p class="text-slate-300 leading-relaxed mb-6">
-        A lo largo del tiempo fui utilizando distintos recursos de formación y
-        práctica que considero especialmente útiles para quienes trabajan —o
-        quieren trabajar— en seguridad, detección e investigación de incidentes.
-        Muchos de ellos son gratuitos!
-    </p>
+  <p class="text-slate-300 leading-relaxed mb-6">
+    A lo largo del tiempo fui utilizando distintos recursos de formación y
+    práctica que considero especialmente útiles para quienes trabajan —o
+    quieren trabajar— en seguridad, detección e investigación de incidentes.
+    Muchos de ellos son gratuitos!
+  </p>
 
-    <ul class="space-y-4 text-slate-300">
-        <li>
-            <a href="https://www.splunk.com/en_us/training/course-catalog.html?sort=Newest&filters=filterGroup1FreeCourses"
-               target="_blank"
-               class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
-                Splunk – Free Training Catalog
-            </a>
-            <p class="text-sm text-slate-400">
-                Cursos free orientados a SIEM, búsqueda, visualización y análisis de eventos.
-            </p>
-        </li>
+  <ul class="space-y-4 text-slate-300">
+    <li>
+      <a
+        href="https://www.splunk.com/en_us/training/course-catalog.html?sort=Newest&filters=filterGroup1FreeCourses"
+        target="_blank"
+        class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
+      >
+        Splunk – Free Training Catalog
+      </a>
+      <p class="text-sm text-slate-400">
+        Cursos free orientados a SIEM, búsqueda, visualización y análisis de eventos.
+      </p>
+    </li>
 
-        <li>
-            <a href="https://learn.elastic.co/"
-               target="_blank"
-               class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
-                Elastic Learn
-            </a>
-            <p class="text-sm text-slate-400">
-                Formación en Elastic Security, detección, hunting y uso de Elastic como plataforma de seguridad.
-            </p>
-        </li>
+    <li>
+      <a
+        href="https://learn.elastic.co/"
+        target="_blank"
+        class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
+      >
+        Elastic Learn
+      </a>
+      <p class="text-sm text-slate-400">
+        Formación en Elastic Security, detección, hunting y uso de Elastic como plataforma de seguridad.
+      </p>
+    </li>
 
-        <li>
-            <a href="https://learning.okta.com/page/courses-all#type_on-demand"
-               target="_blank"
-               class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
-                Okta & Auth0 – Learning Portal
-            </a>
-            <p class="text-sm text-slate-400">
-                Contenidos on-demand sobre identidad, autenticación, autorización y seguridad de accesos.
-            </p>
-        </li>
+    <li>
+      <a
+        href="https://learning.okta.com/page/courses-all#type_on-demand"
+        target="_blank"
+        class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
+      >
+        Okta & Auth0 – Learning Portal
+      </a>
+      <p class="text-sm text-slate-400">
+        Contenidos on-demand sobre identidad, autenticación, autorización y seguridad de accesos.
+      </p>
+    </li>
 
-        <li>
-            <a href="https://tryhackme.com/"
-               target="_blank"
-               class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
-                TryHackMe
-            </a>
-            <p class="text-sm text-slate-400">
-                Plataforma práctica para desarrollar habilidades técnicas en seguridad ofensiva y defensiva.
-            </p>
-        </li>
+    <li>
+      <a
+        href="https://tryhackme.com/"
+        target="_blank"
+        class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
+      >
+        TryHackMe
+      </a>
+      <p class="text-sm text-slate-400">
+        Plataforma práctica para desarrollar habilidades técnicas en seguridad ofensiva y defensiva.
+      </p>
+    </li>
 
-        <li>
-            <a href="https://portswigger.net/web-security"
-               target="_blank"
-               class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
-                PortSwigger Web Security Academy
-            </a>
-            <p class="text-sm text-slate-400">
-                Laboratorios y explicaciones profundas sobre vulnerabilidades web y técnicas de ataque.
-            </p>
-        </li>
-    </ul>
+    <li>
+      <a
+        href="https://portswigger.net/web-security"
+        target="_blank"
+        class="font-medium text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition"
+      >
+        PortSwigger Web Security Academy
+      </a>
+      <p class="text-sm text-slate-400">
+        Laboratorios y explicaciones profundas sobre vulnerabilidades web y técnicas de ataque.
+      </p>
+    </li>
+  </ul>
 </section>
+
     
     <!-- CONTACT -->
     <section id="contact" class="glass rounded-xl p-6">
@@ -328,30 +339,27 @@
 
 <script>
   const toggle = document.getElementById('theme-toggle');
-  const icon = toggle.querySelector('i');
   const root = document.documentElement;
 
   // estado inicial
-  if (localStorage.theme === 'light') {
-    root.classList.remove('dark');
-    icon.classList.replace('fa-moon', 'fa-sun');
-  } else {
+  if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
     root.classList.add('dark');
-    icon.classList.replace('fa-sun', 'fa-moon');
+  } else {
+    root.classList.remove('dark');
   }
 
   toggle.addEventListener('click', () => {
-    if (root.classList.contains('dark')) {
-      root.classList.remove('dark');
-      localStorage.theme = 'light';
-      icon.classList.replace('fa-moon', 'fa-sun');
-    } else {
-      root.classList.add('dark');
-      localStorage.theme = 'dark';
-      icon.classList.replace('fa-sun', 'fa-moon');
-    }
+    root.classList.toggle('dark');
+    localStorage.theme = root.classList.contains('dark')
+      ? 'dark'
+      : 'light';
   });
 </script>
+
 
     
 </body>
