@@ -1,59 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Licina Picón – Perfil profesional</title>
+  <title>Licina Picón – Perfil profesional</title>
 
-    
-    <!-- SEO básico -->
-    <meta name="description" content="Perfil profesional de Licina Picón. Trayectoria, proyectos y líneas de trabajo." />
-    <meta name="author" content="Licina Picón" />
-    <meta name="robots" content="index, follow" />
+  <!-- BLOQUEO TOTAL MODO OSCURO -->
+  <meta name="color-scheme" content="light only">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Licina Picón – Perfil profesional" />
-    <meta property="og:description" content="Trayectoria, proyectos y trabajo profesional de Licina Picón." />
-    <meta property="og:type" content="profile" />
-    <meta property="og:locale" content="es_AR" />
-
-    <!-- Tailwind (modo claro fijo) -->
-<script>
-  tailwind.config = {
-    darkMode: false
-  }
-</script>
-
-<script>
-  /* Bloqueo total de dark mode */
-  try {
-    document.documentElement.classList.remove('dark');
-    localStorage.removeItem('theme');
-  } catch(e) {}
-</script>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Licina Picón",
-      "url": "https://licinapicon.github.io/",
-      "description": "Perfil profesional y proyectos de Licina Picón",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Argentina"
-      }
+  <style>
+    :root { color-scheme: light only; }
+    html, body {
+      background-color: #ffffff !important;
+      color: #334155 !important;
     }
-    </script>
+  </style>
+
+  <!-- Tailwind en modo claro fijo -->
+  <script>
+    tailwind.config = { darkMode: false }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO -->
+  <meta name="description" content="Perfil profesional de Licina Picón. Trayectoria, proyectos y líneas de trabajo." />
+  <meta name="author" content="Licina Picón" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 
 <body class="bg-white text-slate-700 transition-colors duration-300">
 
