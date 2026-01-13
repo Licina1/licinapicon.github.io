@@ -78,12 +78,6 @@
             <a href="#recursos">Recursos</a>
             <a href="#contact">Contacto</a>
 
-            <!-- toggle -->
-            <button id="theme-toggle" aria-label="Toggle dark mode">
-              <span id="icon-sun">☀️</span>
-              <span id="icon-moon" class="hidden">🌙</span>
-            </button>
-
         </div>
     </nav>
 </header>
@@ -437,13 +431,7 @@
   // estado inicial: leer preferencia guardada o del sistema (si aplica)
   setTheme(html.classList.contains("dark"), false);
 
-  if (toggle) {
-    toggle.addEventListener("click", () => {
-      setTheme(!html.classList.contains("dark"));
-    });
-  } else {
-    console.warn('theme-toggle no encontrado en el DOM');
-  }
+
 </script>
 
 
